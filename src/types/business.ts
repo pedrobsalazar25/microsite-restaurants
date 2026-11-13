@@ -5,6 +5,7 @@ export interface BusinessReview {
   text: string;
   relativeTime: string;
   avatarUrl?: string;
+  isLocalGuide?: boolean;
 }
 
 export interface BusinessOffering {

@@ -13,6 +13,16 @@ import heroSpaPaella from "@/assets/images/spa_paella_hero_1793932690245.jpg";
 import heroNapoletana from "@/assets/images/napoletana_pizza_hero_1793932690780.jpg";
 import heroShanklish from "@/assets/images/shanklish_mezze_hero_1793932690843.jpg";
 
+// New specialized archetype hero banners
+import heroSushiNikkei from "@/assets/images/hero_sushi_nikkei_1794285770995.jpg";
+import heroBurgerStreet from "@/assets/images/hero_burger_street_1794285783041.jpg";
+import heroArepaCriollo from "@/assets/images/hero_arepa_criollo_1794285794770.jpg";
+import heroPolloBrasas from "@/assets/images/hero_pollo_brasas_1794285807908.jpg";
+import heroChurrosDessert from "@/assets/images/hero_churros_dessert_1794285820822.jpg";
+import heroChineseWok from "@/assets/images/hero_chinese_wok_1794285833883.jpg";
+import heroSopaSancocho from "@/assets/images/hero_sopa_sancocho_1794285847062.jpg";
+import heroSmokeBbq from "@/assets/images/hero_smoke_bbq_1794285860058.jpg";
+
 // Generated dish-specific authentic photography
 import dishPuntaTrasera from "@/assets/images/dish_punta_trasera_1793934947431.jpg";
 import dishParrilladaMixta from "@/assets/images/dish_parrillada_mixta_1793934947835.jpg";
@@ -29,6 +39,40 @@ import dishKibbehFrito from "@/assets/images/dish_kibbeh_frito_1793934999439.jpg
 import cervezaPolarImg from "@/assets/dishes/Cerveza_Polar.png";
 import cervezaSoleraImg from "@/assets/dishes/Cerveza_Solera.png";
 import baklavaImg from "@/assets/dishes/Baklava.png";
+
+export {
+  heroTuttoPasta,
+  tuttoPasticho,
+  tuttoFettuccine,
+  tuttoTiramisu,
+  heroFarofa,
+  heroSpaPaella,
+  heroNapoletana,
+  heroShanklish,
+  heroSushiNikkei,
+  heroBurgerStreet,
+  heroArepaCriollo,
+  heroPolloBrasas,
+  heroChurrosDessert,
+  heroChineseWok,
+  heroSopaSancocho,
+  heroSmokeBbq,
+  dishPuntaTrasera,
+  dishParrilladaMixta,
+  dishQuesilloVenezolano,
+  dishPizzaMargherita,
+  dishCannoliSiciliani,
+  dishRisottoPorcini,
+  dishShanklishMezze,
+  dishShawarmaPlatter,
+  dishPaellaMariscos,
+  dishPicanhaChurrasco,
+  dishAbacaxiGrelhado,
+  dishKibbehFrito,
+  cervezaPolarImg,
+  cervezaSoleraImg,
+  baklavaImg,
+};
 
 // Helper to sanitize slugs
 export const slugify = (text: string): string =>
@@ -48,7 +92,7 @@ export const LA_CABANA_PROFILE: BusinessProfile = {
   slug: "la-cabana",
   name: "La Cabaña",
   shortName: "La Cabaña",
-  heroImage: dishParrilladaMixta,
+  heroImage: heroFarofa,
   gmbUrl: "https://www.google.com/maps/place/La+caba%C3%B1a/data=!4m7!3m6!1s0x8dcbf90501e71399:0x4736c3d9d822616f!8m2!3d8.2916621!4d-62.7337749!16s%2Fg%2F11p5rs9lmf",
   category: "Parrilla, Carnes & Steakhouse",
   specialtyTagline: "Cortes Madurados, Asado Tradicional y Parrillas Criollas",
@@ -150,7 +194,7 @@ export const EL_MIRADOR_ITALO_PROFILE: BusinessProfile = {
   slug: "el-mirador-del-italo",
   name: "El Mirador del Ítalo",
   shortName: "El Mirador",
-  heroImage: dishRisottoPorcini,
+  heroImage: heroNapoletana,
   gmbUrl: "https://www.google.com/maps/place/El+Mirador+del+Italo/data=!4m7!3m6!1s0x8dcbfba5362a823d:0xa6305965547bc1b3!8m2!3d8.2803824!4d-62.7095434!16s%2Fg%2F11h9d1pld9",
   category: "Cocina Italiana, Carnes & Terraza Panorámica",
   specialtyTagline: "Gastronomía Mediterránea con la Mejor Vista al Río Caroní",
@@ -807,7 +851,7 @@ export const LA_POSADA_CHIQUITO_PROFILE: BusinessProfile = {
   slug: "la-posada-de-chiquito-tasca",
   name: "La Posada de Chiquito Tasca",
   shortName: "La Posada",
-  heroImage: dishParrilladaMixta,
+  heroImage: heroSpaPaella,
   gmbUrl: "https://www.google.com/maps/place/La+Posada+de+Chiquito+Tasca/data=!4m7!3m6!1s0x8dcbfa3c3e4277eb:0x49c167b5a013f48c!8m2!3d8.3172547!4d-62.7158572!16s%2Fg%2F1tggvkkt",
   category: "Tasca Española, Tapas & Taberna Tradicional",
   specialtyTagline: "Tapas Españolas, Tortilla Gallega, Pulpo a la Gallega y Jamón Serrano",
@@ -1282,7 +1326,7 @@ export const EL_SAZONAR_PROFILE: BusinessProfile = {
   slug: "el-sazonar",
   name: "El Sazonar",
   shortName: "El Sazonar",
-  heroImage: dishParrilladaMixta,
+  heroImage: heroArepaCriollo,
   gmbUrl: "https://www.google.com/maps/place/EL+SAZONAR/data=!4m7!3m6!1s0x8dcbf9400882ec71:0x86e90cbf61e78c7!8m2!3d8.2822003!4d-62.7537439!16s%2Fg%2F11hf8czc6c",
   category: "Cocina Criolla Tradicional & Menús Caseros",
   specialtyTagline: "Almuerzos Ejecutivos, Pabellón Criollo, Asado Negro y Sopas",
@@ -1472,7 +1516,7 @@ export const SPENCER_STREET_FOOD_PROFILE: BusinessProfile = {
   slug: "spencer-street-food",
   name: "Spencer Street Food",
   shortName: "Spencer",
-  heroImage: dishParrilladaMixta,
+  heroImage: heroBurgerStreet,
   gmbUrl: "https://www.google.com/maps/place/SPENCER+STREET+FOOD+@spencer_streetfood/data=!4m7!3m6!1s0x8dcbf914b4c481ad:0xda9c9b78d9e89d23!8m2!3d8.2746723!4d-62.7696673!16s%2Fg%2F11n974n6xq",
   category: "Street Food Gourmet, Smash Burgers & Hot Dogs",
   specialtyTagline: "Smash Burgers Dobles, Papas Loaded, Perros Calientes y Salsas de Autor",
@@ -1757,7 +1801,7 @@ export const PORKIS_286_PROFILE: BusinessProfile = {
   slug: "porkis-286",
   name: "Porki's 286",
   shortName: "Porki's",
-  heroImage: dishParrilladaMixta,
+  heroImage: heroSmokeBbq,
   gmbUrl: "https://www.google.com/maps/place/Porki%27s+286,+C.A/data=!4m7!3m6!1s0x8dcbf9a1566c8edd:0xa5195767c74a861b!8m2!3d8.276754!4d-62.7652046!16s%2Fg%2F11k4x8zjnc",
   category: "Especialistas en Cerdo, Costillitas BBQ & Chicharrón",
   specialtyTagline: "Costillas BBQ Ahumadas, Pernil Horneado, Chicharrón y Hamburguesas de Cerdo",
@@ -2232,7 +2276,7 @@ export const ECHA_VAINA_PROFILE: BusinessProfile = {
   slug: "echa-vaina",
   name: "Echa Vaina",
   shortName: "Echa Vaina",
-  heroImage: dishParrilladaMixta,
+  heroImage: heroBurgerStreet,
   gmbUrl: "https://www.google.com/maps/place/Echa+Vaina/data=!4m7!3m6!1s0x8dcbf931ae2a352b:0xd20102101b0e7f0!8m2!3d8.2962704!4d-62.7328396!16s%2Fg%2F11vl8llt52",
   category: "Restobar, Cervecería & Comida Urbana Venezolana",
   specialtyTagline: "Picaditas Criollas, Hamburguesas Monstruosas, Alitas y Cervezas Vestidas de Novia",
@@ -2422,7 +2466,7 @@ export const TROGLIS_PROFILE: BusinessProfile = {
   slug: "troglis-restaurante",
   name: "Troglis Restaurante",
   shortName: "Troglis",
-  heroImage: dishRisottoPorcini,
+  heroImage: heroFarofa,
   gmbUrl: "https://www.google.com/maps/place/Troglis+restaurante/data=!4m7!3m6!1s0x8dce87a771653e55:0x6db354b62c76662a!8m2!3d8.2811226!4d-62.7099663!16s%2Fg%2F11cn94nvn5",
   category: "Cocina Internacional, Carnes & Terraza Social",
   specialtyTagline: "Gastronomía Selecta, Cortes a la Parrilla y Ambiente Exclusivo",
@@ -2517,7 +2561,7 @@ export const DORO_RESTAURANTE_PROFILE: BusinessProfile = {
   slug: "doro-restaurante",
   name: "D'oro Restaurante",
   shortName: "D'oro",
-  heroImage: dishRisottoPorcini,
+  heroImage: heroTuttoPasta,
   gmbUrl: "https://www.google.com/maps/place/D%27oro+Restaurante/data=!4m7!3m6!1s0x8dcbf900302570b1:0x1554065324272d01!8m2!3d8.2870159!4d-62.730282!16s%2Fg%2F11wb14z7sn",
   category: "Alta Cocina Italiana & Pescados Nobles",
   specialtyTagline: "Pastas Rellenas al Huevo, Risottos al Parmesano, Mariscos y Pescados",
@@ -2707,7 +2751,7 @@ export const WARS_286_PROFILE: BusinessProfile = {
   slug: "wars-286",
   name: "Wars 286",
   shortName: "Wars 286",
-  heroImage: dishParrilladaMixta,
+  heroImage: heroBurgerStreet,
   gmbUrl: "https://www.google.com/maps/place/Wars+286/data=!4m7!3m6!1s0x8dcbff8d8c40856f:0x5c36cc23c4385b7e!8m2!3d8.2572078!4d-62.7798033!16s%2Fg%2F11q1pjx99w",
   category: "Burgers Gourmet, Alitas & Cervecería Urbana",
   specialtyTagline: "Hamburguesas Épicas, Alitas Picantes, Papas Loaded y Cervezas Frías",
@@ -2802,7 +2846,7 @@ export const CIVETA_PROFILE: BusinessProfile = {
   slug: "civeta",
   name: "Civeta",
   shortName: "Civeta",
-  heroImage: dishRisottoPorcini,
+  heroImage: tuttoTiramisu,
   gmbUrl: "https://www.google.com/maps/place/Civeta/data=!4m7!3m6!1s0x8dcbfb540be0da53:0x29aecda946a349c9!8m2!3d8.3046182!4d-62.7227836!16s%2Fg%2F11h6d_7hd2",
   category: "Café Bistró, Brunch & Cocina Contemporánea",
   specialtyTagline: "Café de Especialidad, Brunchs Gourmet, Tostadas de Masa Madre y Pastelería",
@@ -2897,7 +2941,7 @@ export const BEIJING_HOUSE_PROFILE: BusinessProfile = {
   slug: "beijing-house",
   name: "Beijing House",
   shortName: "Beijing House",
-  heroImage: dishRisottoPorcini,
+  heroImage: heroChineseWok,
   gmbUrl: "https://www.google.com/maps/place/Beijing+House/data=!4m7!3m6!1s0x8dcbf9aa3ff59e77:0x4cc95db83f1f47c2!8m2!3d8.2957212!4d-62.732546!16s%2Fg%2F11qpw5gntj",
   category: "Auténtica Gastronomía Cantonesa & China Tradicional",
   specialtyTagline: "Arroz Frito Especial, Pollo Agridulce, Lumpias y Costillitas con Sal y Pimienta",
@@ -3277,7 +3321,7 @@ export const RIBS_BURGER_PROFILE: BusinessProfile = {
   slug: "ribs-burger-restaurante",
   name: "Ribs Burger",
   shortName: "Ribs Burger",
-  heroImage: dishParrilladaMixta,
+  heroImage: heroBurgerStreet,
   gmbUrl: "https://www.google.com/maps/place/Ribs+Burger+%28Restaurante%29/data=!4m7!3m6!1s0x8dcbf99bce5165b3:0x2f8199919708034a!8m2!3d8.2840409!4d-62.7568509!16s%2Fg%2F11j1cxv__5",
   category: "Hamburguesas de Costilla, BBQ & Carnes Ahumadas",
   specialtyTagline: "Burgers de Costilla Desmechada, Racks BBQ, Papas Trufadas y Alitas",
@@ -3614,12 +3658,123 @@ export function createBusinessFromGmbData(data: {
   const name = extractedName?.trim() || "Nuevo Negocio Local";
   const slug = slugify(name);
   const cleanEmail = data.email?.trim() || `info@${slug.replace(/-/g, "")}.com`;
-  const cleanCategory = data.category?.trim() || "Gastronomía & Especialidades";
-  const cleanSpecialty = data.specialty?.trim() || `Lo mejor de ${cleanCategory} con atención de primera`;
 
-  const mapQuery = encodeURIComponent(data.address ? `${name}, ${data.address}` : name);
-  const mapEmbedUrl = `https://maps.google.com/maps?q=${mapQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
-  const googleMapsDirectionsUrl = `https://maps.google.com/?q=${mapQuery}`;
+  // Detect city and coordinates from URL
+  let detectedCity = data.city;
+  let lat: number | null = null;
+  let lng: number | null = null;
+  try {
+    const coordMatch = data.url.match(/!3d([-\d.]+)!4d([-\d.]+)/);
+    if (coordMatch) {
+      lat = parseFloat(coordMatch[1]);
+      lng = parseFloat(coordMatch[2]);
+    }
+  } catch {}
+
+  if (!detectedCity) {
+    if (lat && lng) {
+      // Longitude around -68.0 and latitude around 10.2 is Valencia, Carabobo
+      if (lat > 9.9 && lat < 10.5 && lng < -67.8 && lng > -68.3) {
+        detectedCity = "Valencia, Estado Carabobo, Venezuela";
+      } else if (lat > 8.1 && lat < 8.5 && lng < -62.5 && lng > -63.0) {
+        detectedCity = "Puerto Ordaz, Estado Bolívar, Venezuela";
+      }
+    }
+    if (!detectedCity) {
+      const lowerUrl = data.url.toLowerCase();
+      if (lowerUrl.includes("valencia") || lowerUrl.includes("carabobo")) {
+        detectedCity = "Valencia, Estado Carabobo, Venezuela";
+      } else {
+        detectedCity = "Venezuela";
+      }
+    }
+  }
+
+  // Detect category intelligently from name if generic
+  let cleanCategory = data.category?.trim();
+  let cleanSpecialty = data.specialty?.trim();
+  const lowerName = name.toLowerCase();
+
+  if (!cleanCategory) {
+    if (lowerName.includes("sushi") || lowerName.includes("ramen") || lowerName.includes("poke") || lowerName.includes("cebich") || lowerName.includes("ceviche") || lowerName.includes("tokio") || lowerName.includes("bonsai") || lowerName.includes("fusion") || lowerName.includes("nikkei") || lowerName.includes("kai")) {
+      cleanCategory = "Sushi Bar, Ceviches & Gastronomía Nikkei";
+      cleanSpecialty = cleanSpecialty || "Poke Bowls Hawaianos, Rolls Especiales, Ceviche Clásico y Gyozas";
+    } else if (lowerName.includes("paella") || lowerName.includes("galicia") || lowerName.includes("rias") || lowerName.includes("galeon") || lowerName.includes("marisco") || lowerName.includes("pescado") || lowerName.includes("puertomar") || lowerName.includes("amkelmar") || lowerName.includes("puerto")) {
+      cleanCategory = "Cocina Española, Paellas Marineras & Frutos del Mar";
+      cleanSpecialty = cleanSpecialty || "Auténtica Paella a la Leña, Pulpo a la Gallega, Cazuelas y Pescados Frescos";
+    } else if (lowerName.includes("pollo") || lowerName.includes("chicken") || lowerName.includes("palacio del pollo")) {
+      cleanCategory = "Pollo a las Brasas, Crispy Chicken & Parrillas Familiares";
+      cleanSpecialty = cleanSpecialty || "Pollo al Carbón Jugoso, Crispy Chicken, Hayaquitas, Guasacaca y Ensalada";
+    } else if (lowerName.includes("cachap") || lowerName.includes("shaday") || lowerName.includes("maiz") || lowerName.includes("chicharron") || lowerName.includes("q'delicias")) {
+      cleanCategory = "Cachapería Tradicional, Chicharronera & Cochino Frito";
+      cleanSpecialty = cleanSpecialty || "Cachapas de Maíz Tierno con Doble Queso de Mano, Chicharrón Crocante y Pernil";
+    } else if (lowerName.includes("arepa") || lowerName.includes("tito") || lowerName.includes("empanada") || lowerName.includes("san blas") || lowerName.includes("criollos")) {
+      cleanCategory = "Arepera Tradicional, Empanadas & Desayunos Criollos";
+      cleanSpecialty = cleanSpecialty || "Arepas Resueltas al Budare, Empanadas de Cazón y Mechada, Tequeños y Jugos";
+    } else if (lowerName.includes("smoke") || lowerName.includes("gabo") || lowerName.includes("brisket")) {
+      cleanCategory = "Smokehouse, Brisket Ahumado & BBQ Artesanal";
+      cleanSpecialty = cleanSpecialty || "Brisket Ahumado al Quebracho por 12 Horas, Costillas BBQ y Pulled Pork";
+    } else if (lowerName.includes("churro") || lowerName.includes("sweet") || lowerName.includes("cake") || lowerName.includes("delike") || lowerName.includes("antojo")) {
+      cleanCategory = "Churrería Artesanal, Repostería Creativa & Antojos";
+      cleanSpecialty = cleanSpecialty || "Churros Crujientes Rellenos de Nutella y Arequipe, Tortas Húmedas y Marquesas";
+    } else if (lowerName.includes("perro")) {
+      cleanCategory = "Perros Calientes Tradicionales, Pepitos & Street Food";
+      cleanSpecialty = cleanSpecialty || "Perros Calientes con Todo y Queso Rallado, Pepitos Gratinados y Salsas Especiales";
+    } else if (lowerName.includes("sopa") || lowerName.includes("hervido") || lowerName.includes("angelica") || lowerName.includes("pola") || lowerName.includes("don rafa") || lowerName.includes("sandra") || lowerName.includes("marlen") || lowerName.includes("tia") || lowerName.includes("tupa") || lowerName.includes("arboleda") || lowerName.includes("unicentro") || lowerName.includes("central") || lowerName.includes("toldo") || lowerName.includes("miguel") || lowerName.includes("llanero") || lowerName.includes("leña valenciana") || lowerName.includes("rincon") || lowerName.includes("rincón")) {
+      cleanCategory = "Sopas Criollas, Hervidos Tradicionales & Comida Casera";
+      cleanSpecialty = cleanSpecialty || "Hervidos de Res y Gallina a la Leña, Cruzados, Secos Criollos y Sabor de Hogar";
+    } else if (lowerName.includes("paisa") || lowerName.includes("portoncito") || lowerName.includes("casita paisa")) {
+      cleanCategory = "Auténtica Gastronomía Colombiana & Sabor Paisa";
+      cleanSpecialty = cleanSpecialty || "Bandeja Paisa Típica, Arepas con Hogao, Chicharrón Crocante y Sancocho";
+    } else if (lowerName.includes("ble") || lowerName.includes("blé") || lowerName.includes("boulangerie") || lowerName.includes("croissant")) {
+      cleanCategory = "Boulangerie, Pastelería Francesa & Café Bistró";
+      cleanSpecialty = cleanSpecialty || "Croissants Artesanales de Mantequilla, Baguettes, Quiches y Café de Autor";
+    } else if (lowerName.includes("pizza") || lowerName.includes("mozzarella") || lowerName.includes("mario") || lowerName.includes("prebo") || lowerName.includes("007") || lowerName.includes("veneto") || lowerName.includes("palato") || lowerName.includes("miles") || lowerName.includes("trattoria") || lowerName.includes("pasta") || lowerName.includes("cucina") || lowerName.includes("nonna") || lowerName.includes("bottega") || lowerName.includes("salumeria") || lowerName.includes("pastas") || lowerName.includes("toscana") || lowerName.includes("tintity")) {
+      cleanCategory = "Pizzería al Horno & Auténtica Trattoria Italiana";
+      cleanSpecialty = cleanSpecialty || "Pizzas de Masa Madre, Pasticho Tradicional al Horno y Pastas Frescas";
+    } else if (lowerName.includes("toneles") || lowerName.includes("cuevas") || lowerName.includes("tasca") || lowerName.includes("royal city") || lowerName.includes("balcon") || lowerName.includes("birra") || lowerName.includes("bombonera") || lowerName.includes("chaguaramos") || lowerName.includes("bella estrella") || lowerName.includes("beverly") || lowerName.includes("rancho nuevo")) {
+      cleanCategory = "Tasca Clásica, Tapeo Español, Cervecería & Vinos";
+      cleanSpecialty = cleanSpecialty || "Tapas Ibéricas, Jamón Serrano, Tortilla Española y Cervezas Bien Frías";
+    } else if (lowerName.includes("mostritos") || lowerName.includes("aquefrank") || lowerName.includes("popochorronitas") || lowerName.includes("hangar") || lowerName.includes("street") || lowerName.includes("buguer") || lowerName.includes("burger") || lowerName.includes("geo") || lowerName.includes("glotones") || lowerName.includes("compi") || lowerName.includes("samy") || lowerName.includes("prado")) {
+      cleanCategory = "Hamburguesas Gourmet, Pepitos Criollos & Street Food";
+      cleanSpecialty = cleanSpecialty || "Hamburguesas Monumentales, Pepitos con Gratinado Especial y Salsas de la Casa";
+    } else if (lowerName.includes("arabe") || lowerName.includes("arabito") || lowerName.includes("libanes") || lowerName.includes("vagon") || lowerName.includes("shanklish") || lowerName.includes("beirut") || lowerName.includes("san miguel")) {
+      cleanCategory = "Cocina Árabe Tradicional, Shawarmas & Mezze";
+      cleanSpecialty = cleanSpecialty || "Shawarmas al Carbón, Kibbeh Frito, Hummus, Baba Ganoush y Tabaquitos";
+    } else if (lowerName.includes("grill") || lowerName.includes("parrilla") || lowerName.includes("carbon") || lowerName.includes("bunker") || lowerName.includes("fogon") || lowerName.includes("churrasc") || lowerName.includes("meson") || lowerName.includes("mesón") || lowerName.includes("rodeo") || lowerName.includes("kamedu")) {
+      cleanCategory = "Carnes a las Brasas, Steakhouse & Parrilla";
+      cleanSpecialty = cleanSpecialty || "Cortes Prime Madurados, Asado a la Leña y Parrillas Familiares";
+    } else if (lowerName.includes("cafe") || lowerName.includes("coffee") || lowerName.includes("bistro") || lowerName.includes("galeno") || lowerName.includes("anella") || lowerName.includes("dolcezza") || lowerName.includes("boceto")) {
+      cleanCategory = "Café Bistró, Brunch & Repostería de Autor";
+      cleanSpecialty = cleanSpecialty || "Café de Especialidad, Brunchs Gourmet y Pastelería Artesanal";
+    } else if (lowerName.includes("mar") || lowerName.includes("nautilus") || lowerName.includes("pescado")) {
+      cleanCategory = "Pescados Frescos, Mariscos & Jardín Gourmet";
+      cleanSpecialty = cleanSpecialty || "Frutos del Mar, Paellas Marineras y Pesca del Día";
+    } else if (lowerName.includes("garden") || lowerName.includes("imperial") || lowerName.includes("yin") || lowerName.includes("wei") || lowerName.includes("chino") || lowerName.includes("lila su")) {
+      cleanCategory = "Alta Cocina Asiática, Cantonesa & Especialidades Wok";
+      cleanSpecialty = cleanSpecialty || "Platos al Wok, Arroz Especial Cantonés, Dim Sum y Pato Laqueado";
+    } else if (lowerName.includes("dorado") || lowerName.includes("lounge") || lowerName.includes("bar") || lowerName.includes("ubuntu") || lowerName.includes("esquina") || lowerName.includes("isabella") || lowerName.includes("drink")) {
+      cleanCategory = "Resto-Bar Gourmet, Coctelería de Autor & Tapas";
+      cleanSpecialty = cleanSpecialty || "Coctelería de Vanguardia, Platos para Compartir y Música en Vivo";
+    } else if (lowerName.includes("sambil")) {
+      cleanCategory = "Paseo Gastronómico Sambil & Feria Gourmet";
+      cleanSpecialty = cleanSpecialty || "Selección de Marcas Culinarias, Opciones Familiares y Postres";
+    } else if (lowerName.includes("frida")) {
+      cleanCategory = "Cocina Mexicana Contemporánea & Tacos de Autor";
+      cleanSpecialty = cleanSpecialty || "Tacos al Pastor, Quesadillas, Margaritas y Guacamole Fresco";
+    } else {
+      cleanCategory = "Gastronomía Selecta & Restaurante Gourmet";
+      cleanSpecialty = cleanSpecialty || `Platos exclusivos y atención personalizada en ${name}`;
+    }
+  }
+
+  cleanSpecialty = cleanSpecialty || `Lo mejor de ${cleanCategory} con atención de primera`;
+
+  const mapQuery = lat && lng ? `${lat},${lng}` : encodeURIComponent(data.address ? `${name}, ${data.address}` : `${name}, ${detectedCity}`);
+  const mapEmbedUrl = lat && lng 
+    ? `https://maps.google.com/maps?q=${lat},${lng}&hl=es&z=16&output=embed`
+    : `https://maps.google.com/maps?q=${mapQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+  const googleMapsDirectionsUrl = lat && lng ? `https://www.google.com/maps/place/${lat},${lng}` : `https://maps.google.com/?q=${mapQuery}`;
 
   // Smart category-based dish image selection
   const catLower = (cleanCategory + " " + cleanSpecialty + " " + name).toLowerCase();
@@ -3627,15 +3782,47 @@ export function createBusinessFromGmbData(data: {
   let secondaryDishImg = dishParrilladaMixta;
   let dessertImg = dishQuesilloVenezolano;
 
-  if (catLower.includes("pizza") || catLower.includes("ital") || catLower.includes("pasta")) {
+  if (catLower.includes("pizza") || catLower.includes("ital") || catLower.includes("pasta") || catLower.includes("nonna") || catLower.includes("mozzarella") || catLower.includes("mario")) {
     mainDishImg = dishPizzaMargherita;
     secondaryDishImg = tuttoPasticho;
     dessertImg = dishCannoliSiciliani;
-  } else if (catLower.includes("paella") || catLower.includes("marisco") || catLower.includes("pescad")) {
+  } else if (catLower.includes("sushi") || catLower.includes("nikkei") || catLower.includes("ramen") || catLower.includes("poke") || catLower.includes("tokio") || catLower.includes("japo") || catLower.includes("bonsai") || catLower.includes("kai")) {
+    mainDishImg = heroSushiNikkei;
+    secondaryDishImg = dishRisottoPorcini;
+    dessertImg = dishCannoliSiciliani;
+  } else if (catLower.includes("paella") || catLower.includes("marisco") || catLower.includes("pescad") || catLower.includes("galicia") || catLower.includes("rias") || catLower.includes("galeon") || catLower.includes("mar") || catLower.includes("puertomar")) {
     mainDishImg = dishPaellaMariscos;
     secondaryDishImg = heroSpaPaella;
     dessertImg = dishQuesilloVenezolano;
-  } else if (catLower.includes("arabe") || catLower.includes("liban") || catLower.includes("shawarma") || catLower.includes("shanklish")) {
+  } else if (catLower.includes("pollo") || catLower.includes("chicken")) {
+    mainDishImg = heroPolloBrasas;
+    secondaryDishImg = dishParrilladaMixta;
+    dessertImg = dishQuesilloVenezolano;
+  } else if (catLower.includes("arepa") || catLower.includes("tito") || catLower.includes("empanada") || catLower.includes("san blas") || catLower.includes("cachap") || catLower.includes("shaday") || catLower.includes("maiz") || catLower.includes("chicharron") || catLower.includes("q'delicias")) {
+    mainDishImg = heroArepaCriollo;
+    secondaryDishImg = dishParrilladaMixta;
+    dessertImg = dishQuesilloVenezolano;
+  } else if (catLower.includes("smoke") || catLower.includes("gabo") || catLower.includes("brisket")) {
+    mainDishImg = heroSmokeBbq;
+    secondaryDishImg = dishPicanhaChurrasco;
+    dessertImg = dishQuesilloVenezolano;
+  } else if (catLower.includes("sopa") || catLower.includes("hervido") || catLower.includes("sancocho") || catLower.includes("llanero") || catLower.includes("toldo") || catLower.includes("miguel")) {
+    mainDishImg = heroSopaSancocho;
+    secondaryDishImg = dishParrilladaMixta;
+    dessertImg = dishQuesilloVenezolano;
+  } else if (catLower.includes("chino") || catLower.includes("canton") || catLower.includes("lila su") || catLower.includes("garden") || catLower.includes("imperial") || catLower.includes("yin") || catLower.includes("wei") || catLower.includes("beijing")) {
+    mainDishImg = heroChineseWok;
+    secondaryDishImg = dishRisottoPorcini;
+    dessertImg = dishCannoliSiciliani;
+  } else if (catLower.includes("churro") || catLower.includes("sweet") || catLower.includes("cake") || catLower.includes("delike") || catLower.includes("antojo") || catLower.includes("dolcezza")) {
+    mainDishImg = heroChurrosDessert;
+    secondaryDishImg = tuttoTiramisu;
+    dessertImg = dishQuesilloVenezolano;
+  } else if (catLower.includes("mostritos") || catLower.includes("aquefrank") || catLower.includes("popochorronitas") || catLower.includes("hangar") || catLower.includes("street") || catLower.includes("buguer") || catLower.includes("burger") || catLower.includes("geo") || catLower.includes("glotones") || catLower.includes("compi") || catLower.includes("samy") || catLower.includes("prado") || catLower.includes("perro")) {
+    mainDishImg = heroBurgerStreet;
+    secondaryDishImg = dishParrilladaMixta;
+    dessertImg = dishQuesilloVenezolano;
+  } else if (catLower.includes("arabe") || catLower.includes("liban") || catLower.includes("arabito") || catLower.includes("shawarma") || catLower.includes("shanklish")) {
     mainDishImg = dishShawarmaPlatter;
     secondaryDishImg = dishShanklishMezze;
     dessertImg = baklavaImg;
@@ -3645,27 +3832,1378 @@ export function createBusinessFromGmbData(data: {
     dessertImg = dishQuesilloVenezolano;
   }
 
-  const cleanPhone = (data.phone || "584249147877").replace(/[^\d]/g, "");
+  // Determine hero banner image tailored to cuisine
+  let heroBannerImg = mainDishImg;
+  if (catLower.includes("pizza") || catLower.includes("ital") || catLower.includes("pasta") || catLower.includes("nonna") || catLower.includes("mozzarella") || catLower.includes("mario") || catLower.includes("prebo") || catLower.includes("007") || catLower.includes("toscana") || catLower.includes("tintity")) {
+    heroBannerImg = heroNapoletana;
+  } else if (catLower.includes("sushi") || catLower.includes("poke") || catLower.includes("ramen") || catLower.includes("nikkei") || catLower.includes("cebich") || catLower.includes("ceviche") || catLower.includes("tokio") || catLower.includes("bonsai") || catLower.includes("kai")) {
+    heroBannerImg = heroSushiNikkei;
+  } else if (catLower.includes("paella") || catLower.includes("marisco") || catLower.includes("pescad") || catLower.includes("galicia") || catLower.includes("rias") || catLower.includes("galeon") || catLower.includes("puertomar") || catLower.includes("amkelmar") || catLower.includes("nautilus")) {
+    heroBannerImg = heroSpaPaella;
+  } else if (catLower.includes("pollo") || catLower.includes("chicken") || catLower.includes("palacio del pollo")) {
+    heroBannerImg = heroPolloBrasas;
+  } else if (catLower.includes("arepa") || catLower.includes("tito") || catLower.includes("empanada") || catLower.includes("san blas") || catLower.includes("criollo") || catLower.includes("cachap") || catLower.includes("shaday") || catLower.includes("maiz") || catLower.includes("chicharron") || catLower.includes("q'delicias") || catLower.includes("paisa") || catLower.includes("portoncito")) {
+    heroBannerImg = heroArepaCriollo;
+  } else if (catLower.includes("smoke") || catLower.includes("gabo") || catLower.includes("brisket")) {
+    heroBannerImg = heroSmokeBbq;
+  } else if (catLower.includes("grill") || catLower.includes("parrilla") || catLower.includes("carbon") || catLower.includes("churrasc") || catLower.includes("rodizio") || catLower.includes("bunker") || catLower.includes("meson") || catLower.includes("rodeo") || catLower.includes("kamedu") || catLower.includes("farofa")) {
+    heroBannerImg = heroFarofa;
+  } else if (catLower.includes("mostritos") || catLower.includes("aquefrank") || catLower.includes("popochorronitas") || catLower.includes("hangar") || catLower.includes("street") || catLower.includes("buguer") || catLower.includes("burger") || catLower.includes("geo") || catLower.includes("glotones") || catLower.includes("compi") || catLower.includes("samy") || catLower.includes("prado") || catLower.includes("perro")) {
+    heroBannerImg = heroBurgerStreet;
+  } else if (catLower.includes("arabe") || catLower.includes("liban") || catLower.includes("arabito") || catLower.includes("shawarma") || catLower.includes("shanklish") || catLower.includes("beirut") || catLower.includes("san miguel") || catLower.includes("vagon")) {
+    heroBannerImg = heroShanklish;
+  } else if (catLower.includes("chino") || catLower.includes("canton") || catLower.includes("lila su") || catLower.includes("garden") || catLower.includes("imperial") || catLower.includes("yin") || catLower.includes("wei") || catLower.includes("beijing")) {
+    heroBannerImg = heroChineseWok;
+  } else if (catLower.includes("sopa") || catLower.includes("hervido") || catLower.includes("sancocho") || catLower.includes("llanero") || catLower.includes("toldo") || catLower.includes("miguel") || catLower.includes("angelica") || catLower.includes("pola") || catLower.includes("don rafa") || catLower.includes("sandra") || catLower.includes("leña valenciana") || catLower.includes("arboleda") || catLower.includes("rincon") || catLower.includes("rincón")) {
+    heroBannerImg = heroSopaSancocho;
+  } else if (catLower.includes("churro") || catLower.includes("sweet") || catLower.includes("cake") || catLower.includes("delike") || catLower.includes("antojo") || catLower.includes("dolcezza")) {
+    heroBannerImg = heroChurrosDessert;
+  } else if (catLower.includes("ble") || catLower.includes("blé") || catLower.includes("cafe") || catLower.includes("coffee") || catLower.includes("bistro") || catLower.includes("galeno") || catLower.includes("anella") || catLower.includes("boceto")) {
+    heroBannerImg = tuttoTiramisu;
+  } else if (catLower.includes("toneles") || catLower.includes("cuevas") || catLower.includes("tasca") || catLower.includes("royal city") || catLower.includes("balcon") || catLower.includes("birra") || catLower.includes("bombonera") || catLower.includes("chaguaramos") || catLower.includes("bella estrella") || catLower.includes("beverly") || catLower.includes("rancho nuevo")) {
+    heroBannerImg = heroSpaPaella;
+  }
+
+  // Archetype-tailored hero section and dishes
+  let heroHeadline = `Experiencia Exclusiva en ${name}`;
+  let heroSubtitle = `Disfruta de la mejor calidad y servicio especializado en ${name}. Revisa nuestras especialidades y haz tu pedido directamente por WhatsApp.`;
+  let features = ["Atención Personalizada", "Calidad Garantizada", "Pedidos por WhatsApp", "Ubicación Céntrica"];
+  let offeringsList: BusinessProfile["offerings"] = [];
+
+  if (catLower.includes("pizza") || catLower.includes("ital") || catLower.includes("pasta") || catLower.includes("nonna") || catLower.includes("mozzarella") || catLower.includes("mario") || catLower.includes("prebo")) {
+    heroHeadline = `Auténtica Cocina Italiana & Pizzería al Horno en ${name}`;
+    heroSubtitle = `Pizzas a la leña con masa madre de fermentación lenta, pastas frescas estiradas a mano, salsas de la nonna y quesos importados de Italia.`;
+    features = ["Horno a la Leña Tradicional", "Pastas Frescas al Huevo", "Pomodoro San Marzano & Mozzarella", "Delivery & Pickup por WhatsApp"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Pizza Margherita Speciale con Albahaca Fresca",
+        description: "Masa madre fina y crocante al horno de leña, pomodoro italiano, mozzarella fior di latte, albahaca genovesa y aceite de oliva virgen extra",
+        price: 13.5,
+        category: "cocina",
+        image: dishPizzaMargherita,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Pasticho Tradicional a la Boloñesa Gratinado",
+        description: "Capas de pasta fresca artesanal, ragú de res madurada cocida por 6 horas, bechamel cremosa y abundante parmesano reggiano dorado",
+        price: 12.5,
+        category: "cocina",
+        image: tuttoPasticho,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Fettuccine ai Funghi Porcini & Crema de Trufa",
+        description: "Pasta al huevo al dente salteada con hongos porcini silvestres, mantequilla aromatizada y toque de trufa negra",
+        price: 15.0,
+        category: "cocina",
+        image: tuttoFettuccine,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Tiramisú Clásico al Mascarpone Veneziano",
+        description: "Bizcochos savoiardi embebidos en espresso recién extraído con crema de queso mascarpone y lluvia de cacao amargo",
+        price: 5.5,
+        category: "postres",
+        image: tuttoTiramisu,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Copa de Vino Tinto Selección de la Casa",
+        description: "Cabernet Sauvignon / Malbec madurado en roble, servido a temperatura de cava perfecta",
+        price: 3.5,
+        category: "bebidas",
+        image: cervezaSoleraImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("sushi") || catLower.includes("poke") || catLower.includes("tokio") || catLower.includes("bonsai") || catLower.includes("nikkei") || catLower.includes("ramen")) {
+    heroHeadline = `Gastronomía Nikkei, Poke Bowls & Sushi Bar en ${name}`;
+    heroSubtitle = `Salmón fresco certificado, rolls de autor flameados en mesa, poke bowls hawaianos con ingredientes seleccionados y ramen tradicional.`;
+    features = ["Pescados Frescos del Día", "Rolls Flameados de Autor", "Poke Bowls Personalizables", "Empaque Especial para Delivery"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Tokio Salmon & Avocado Poke Bowl",
+        description: "Base de arroz sushi al sésamo, cubos de salmón fresco marinados en ponzu cítrico, edamame, aguacate, ensalada wakame y chips crocantes",
+        price: 14.0,
+        category: "cocina",
+        image: dishRisottoPorcini,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Dragon Flame Roll Gratinado (10 Bocados)",
+        description: "Langostino crocante tempurizado, queso crema y aguacate, coronado con láminas de salmón flameado, salsa anguila y cebollín",
+        price: 12.5,
+        category: "cocina",
+        image: dishPaellaMariscos,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Ramen Tonkotsu Tradicional al Fondo Lento",
+        description: "Caldo de cocción lenta durante 12 horas, fideos artesanales, chashu tierno de cerdo, huevo ajitsuke marinado, nori y brotes de bambú",
+        price: 11.5,
+        category: "cocina",
+        image: dishRisottoPorcini,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Mochi Helado Japonés Trilogía de Sabores",
+        description: "Mochis artesanales suaves rellenos de helado premium de té verde matcha, maracuyá y chocolate belga",
+        price: 5.0,
+        category: "postres",
+        image: dishCannoliSiciliani,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Té Frío Verde Cítrico con Bobas de Fruta",
+        description: "Infusión fresca de té verde con pulpa natural de maracuyá y esferificaciones frutales",
+        price: 3.5,
+        category: "bebidas",
+        image: cervezaPolarImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("paella") || catLower.includes("galicia") || catLower.includes("rias") || catLower.includes("galeon") || catLower.includes("marisco") || catLower.includes("pescad")) {
+    heroHeadline = `Paellas a la Leña, Cocina Gallega & Frutos del Mar en ${name}`;
+    heroSubtitle = `Arroces en paellera gigante con azafrán español, camarones jumbo, calamares, pulpo tierno al pimentón de la vera y los tesoros del mar.`;
+    features = ["Paellas a la Leña Tradicionales", "Mariscos del Día Garantizados", "Pulpo al Estilo Gallego", "Porciones Generosas para Compartir"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Gran Paella Marinera a la Leña con Frutos del Mar (Para 2)",
+        description: "Arroz bomba cocido con caldo de pescado de roca y azafrán, colmado de camarones, calamares, mejillones en concha, almejas y pimientos asados",
+        price: 24.0,
+        category: "cocina",
+        image: dishPaellaMariscos,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Pulpo a la Gallega con Pimentón de la Vera",
+        description: "Medallones de pulpo tierno sobre cama de patatas al vapor, aderezado con sal en escamas, aceite de oliva virgen extra y pimentón ahumado",
+        price: 17.5,
+        category: "cocina",
+        image: heroSpaPaella,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Cazuela de Mariscos Gratinada al Jerez",
+        description: "Camarones, vieiras y calamares cocidos a fuego lento en reducción cremosa de vino jerez y gratinado de queso manchego",
+        price: 15.0,
+        category: "cocina",
+        image: dishPaellaMariscos,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Crema Catalana Caramelizada al Fuego",
+        description: "Postre tradicional con crema suave aromatizada con canela y cítricos, cubierta de costra crujiente de azúcar caramelizada",
+        price: 5.5,
+        category: "postres",
+        image: dishQuesilloVenezolano,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Jarra de Sangría Tinta Española de la Casa",
+        description: "Vino tinto madurado, frutas cítricas maceradas, toque de licor de naranja y canela, servida bien fría con hielo",
+        price: 11.0,
+        category: "bebidas",
+        image: cervezaSoleraImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("pollo")) {
+    heroHeadline = `El Auténtico Pollo en Brasas al Carbón en ${name}`;
+    heroSubtitle = `Pollo marinado con hierbas frescas y sazón tradicional, asado lentamente sobre brasas de carbón vegetal hasta lograr piel dorada y carne jugosa.`;
+    features = ["Carbón Vegetal Seleccionado", "Guasacaca Artesanal Diaria", "Hallaquitas Calientes", "Combos Familiares Económicos"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Pollo Entero en Brasas al Carbón con Guasacaca",
+        description: "Asado a fuego vivo de carbón vegetal, jugoso y dorado, acompañado con guasacaca artesanal, hallaquitas de maíz y ensalada rallada",
+        price: 11.5,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Combo Familiar Pollero (1 y 1/2 Pollo con Guarnición)",
+        description: "Para compartir: un pollo y medio en brasas, ración de yuca frita dorada, tostones campesinos, hallaquitas y refresco de 1.5L",
+        price: 17.5,
+        category: "cocina",
+        image: dishPuntaTrasera,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Ración de Tostones con Queso Rallado & Nata",
+        description: "Plátano verde frito al momento crujiente, servido con abundante queso blanco llanero rallado y nata criolla fresca",
+        price: 4.5,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Quesillo Criollo Tradicional con Caramelo Suave",
+        description: "Receta casera venezolana de leche condensada y vainilla con caramelo dorado",
+        price: 3.5,
+        category: "postres",
+        image: dishQuesilloVenezolano,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Jarra de Papelón con Limón Fresco y Frío",
+        description: "Bebida tradicional de panela de caña pura disuelta con jugo de limón criollo recién exprimido y hielo",
+        price: 3.0,
+        category: "bebidas",
+        image: cervezaPolarImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("cachap") || catLower.includes("shaday") || catLower.includes("maiz")) {
+    heroHeadline = `Cachapas de Maíz Tierno & Auténtico Sabor Criollo en ${name}`;
+    heroSubtitle = `Maíz dulce tierno desgranado y molido en el día, doble queso de mano fresco de finca, cochino frito crujiente y pernil horneado.`;
+    features = ["100% Maíz Tierno Dulce", "Doble Queso de Mano de Finca", "Cochino Frito Crujiente", "Mantequilla & Nata Artesanal"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Cachapa Especial con Doble Queso de Mano & Pernil",
+        description: "Maíz tierno dorado al budare con mantequilla derretida, relleno de pernil de cerdo horneado jugoso y doble rueda de queso de mano fresco",
+        price: 8.5,
+        category: "cocina",
+        image: dishPuntaTrasera,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Ración de Cochino Frito Crujiente con Yuca al Vapor",
+        description: "Trozos de cerdo marinados y fritos en su propia manteca hasta quedar dorados y crocantes por fuera y suaves por dentro, con yuca y mojo",
+        price: 10.5,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Cachapa Clásica con Queso Telita & Nata Criolla",
+        description: "La reina de la casa: maíz dulce caliente con queso telita elástico fundido y porción generosa de nata fresca",
+        price: 7.0,
+        category: "cocina",
+        image: dishPuntaTrasera,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Quesillo Tradicional Venezolano",
+        description: "Postre clásico casero con caramelo dorado y textura sedosa",
+        price: 3.5,
+        category: "postres",
+        image: dishQuesilloVenezolano,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Chicha Criolla Tradicional con Canela & Leche Condensada",
+        description: "Bebida espesa y dulce a base de arroz con leche, servida muy fría con abundante canela en polvo y leche condensada",
+        price: 2.5,
+        category: "bebidas",
+        image: cervezaPolarImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("sopa") || catLower.includes("hervido") || catLower.includes("angelica") || catLower.includes("pola") || catLower.includes("don rafa") || catLower.includes("sandra")) {
+    heroHeadline = `Hervidos Criollos, Sopas al Caldero & Sabor Casero en ${name}`;
+    heroSubtitle = `Caldos concentrados cocidos a fuego lento con verduras frescas del campo, carnes tiernas, cilantro cimarrón y arepitas asadas calientes.`;
+    features = ["Caldo Concentrado a Fuego Lento", "Verduras Frescas Campesinas", "Arepitas Calientes al Budare", "Almuerzos Ejecutivos y Familiares"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Gran Hervido de Res Cruzado con Gallina Criolla",
+        description: "Caldo espeso y reconfortante cocido a fuego de leña con costilla de res, gallina tierna, yuca, ocumo, ñame, maíz y cilantro, con arepitas",
+        price: 7.5,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Sopa de Costilla al Caldero con Verduras",
+        description: "Costilla de res suave que se desprende del hueso en caldo aromático con plátano verde, auyama y mazorca dulce",
+        price: 7.0,
+        category: "cocina",
+        image: dishPuntaTrasera,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Seco Criollo: Carne Mechada, Arroz, Caraotas & Tajadas",
+        description: "El pabellón criollo tradicional preparado con carne mechada jugosa, caraotas negras refritas, arroz blanco y tajadas de plátano maduro",
+        price: 8.5,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Dulce de Lechosa Tradicional con Clavitos de Olor",
+        description: "Láminas traslúcidas de lechosa verde cocidas en almíbar de papelón y especias aromáticas",
+        price: 3.5,
+        category: "postres",
+        image: dishQuesilloVenezolano,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Jugo Natural de Papelón con Limón Frío",
+        description: "Refrescante bebida tradicional servida con abundante hielo picado",
+        price: 2.0,
+        category: "bebidas",
+        image: cervezaPolarImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("paisa") || catLower.includes("portoncito")) {
+    heroHeadline = `Auténtica Gastronomía Colombiana & Sazón Paisa en ${name}`;
+    heroSubtitle = `La verdadera bandeja paisa con chicharrón crocante de varios cortes, frijoles montañeros con garra, arepas con hogao y café de Colombia.`;
+    features = ["Chicharrón Carnudo Crocante", "Frijoles Rojos Estofados", "Arepas Asadas con Hogao", "Porciones Monumentales"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Bandeja Paisa Tradicional Monumental Completa",
+        description: "Frijoles montañeros estofados, arroz blanco, carne molida sazonada, chicharrón crocante de 12 cortes, chorizo frito, huevo frito, tajada de plátano, arepa y aguacate",
+        price: 13.5,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Sancocho Trifásico al Caldero (Res, Cerdo & Gallina)",
+        description: "Tres carnes seleccionadas en caldo tradicional con mazorca, plátano verde, yuca y papa, acompañado de arroz blanco y aguacate",
+        price: 9.0,
+        category: "cocina",
+        image: dishPuntaTrasera,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Arepa Paisa con Hogao Casero & Queso Fundido",
+        description: "Arepa delgadita de maíz blanco recién asada, bañada en sofrito caliente de cebolla y tomate con queso derretido",
+        price: 4.0,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Brevas con Arequipe & Queso Cuajada Fresco",
+        description: "Higos calados en almíbar dulce servidos con dulce de leche arequipe y queso blanco suave",
+        price: 4.5,
+        category: "postres",
+        image: dishQuesilloVenezolano,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Jugo Natural de Lulo en Agua o Leche",
+        description: "Pulpa de lulo colombiano recién procesada, dulce y cítrica, servida bien helada",
+        price: 3.0,
+        category: "bebidas",
+        image: cervezaPolarImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("ble") || catLower.includes("blé") || catLower.includes("croissant") || catLower.includes("boulangerie") || catLower.includes("anella") || catLower.includes("dolcezza")) {
+    heroHeadline = `Boulangerie Francesa, Pastelería Fina & Café de Especialidad en ${name}`;
+    heroSubtitle = `Croissants de hojaldre puro con mantequilla de primera, panes de masa madre con corteza crujiente, repostería europea y café de altura.`;
+    features = ["100% Mantequilla Pura de Granja", "Masa Madre con Fermentación Lenta", "Café de Especialidad 84+ Puntos", "Vitrina de Pastelería Europea Diaria"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Croissant de Mantequilla con Almendras Tostadas",
+        description: "Hojaldre francés crujiente horneado a primera hora, relleno de crema de almendras y cubierto de láminas tostadas y azúcar glas",
+        price: 4.5,
+        category: "cocina",
+        image: dishCannoliSiciliani,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Sandwich Baguette de Jamón Serrano, Queso Brie & Rúgula",
+        description: "Baguette artesanal de masa madre crocante, jamón curado español, cuñas de queso brie fundido, rúgula fresca y aceite de oliva virgen",
+        price: 8.0,
+        category: "cocina",
+        image: dishPizzaMargherita,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Quiche Lorraine Clásico de Tocineta y Queso Gruyère",
+        description: "Tarta salada francesa tradicional con masa quebrada quebradiza y relleno suave de crema, tocineta ahumada y queso gruyère",
+        price: 6.5,
+        category: "cocina",
+        image: tuttoPasticho,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Éclair de Chocolate Belga & Vainilla Francesa",
+        description: "Pasta choux esponjosa rellena de crema pastelera a la vainilla de Madagascar con glaseado brillante de chocolate negro 70%",
+        price: 4.5,
+        category: "postres",
+        image: tuttoTiramisu,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Café Latte Art de Especialidad con Leche Texturizada",
+        description: "Doble shot de espresso de granos venezolanos de origen con microespuma sedosa de leche",
+        price: 3.5,
+        category: "bebidas",
+        image: cervezaSoleraImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("mostritos") || catLower.includes("aquefrank") || catLower.includes("popochorronitas") || catLower.includes("hangar") || catLower.includes("garage")) {
+    heroHeadline = `Hamburguesas Smash, Pepitos Gratinados & Street Food en ${name}`;
+    heroSubtitle = `Carnes jugosas a la plancha, quesos fundidos en cascada, tocineta crujiente, papas cargadas y pepitos gigantes con las salsas de la casa.`;
+    features = ["Carne 100% Res Molida al Día", "Pan Brioche de Papa Suave", "Gratinado de Quesos Fundidos", "Salsas Especiales de la Casa"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Hamburguesa Monster Smash Doble Carne con Tocineta",
+        description: "Doble medallón de 100g de res smash con costra caramelizada, queso cheddar americano derretido, tocineta ahumada, cebolla crispy y salsa especial",
+        price: 9.5,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Pepito Especial 40cm Mixto Gratinado con Parmesano",
+        description: "Pan baguette suave relleno de lomito y pollo a la plancha, maíz dulce, papas ralladas, bañado en salsa tártara y gratinado con queso mozzarella y parmesano",
+        price: 11.5,
+        category: "cocina",
+        image: dishPuntaTrasera,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Papas Rústicas Cargadas con Queso Cheddar & Bacon Bits",
+        description: "Papas naturales fritas crujientes bañadas en abundante salsa de queso cheddar caliente, trocitos de tocineta y cebollín",
+        price: 5.5,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Malteada Espesa de Nutella con Corona de Crema",
+        description: "Helado cremoso batido con abundante Nutella original, crema chantilly y chispas de chocolate",
+        price: 5.0,
+        category: "postres",
+        image: tuttoTiramisu,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Cerveza Polar Pilsen / Solera Bien Fría",
+        description: "La auténtica cerveza venezolana servida a punto de nieve",
+        price: 2.0,
+        category: "bebidas",
+        image: cervezaPolarImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("toneles") || catLower.includes("cuevas") || catLower.includes("tasca") || catLower.includes("royal city")) {
+    heroHeadline = `Tasca Española Clásica, Tapeo de Altura & Vinos en ${name}`;
+    heroSubtitle = `Jamón ibérico curado, raciones calientes para compartir, tortillas españolas jugosas, ambiente bohemio tradicional y cervezas heladas.`;
+    features = ["Jamón Serrano Cortado al Momento", "Tapas Ibéricas Tradicionales", "Cava de Vinos Seleccionada", "Ambiente de Tasca Bohemio"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Tabla Mixta Ibérica de Jamón Serrano & Queso Curado",
+        description: "Láminas finas de jamón curado español, cuñas de queso manchego madurado, aceitunas sevillanas y pan con tomate y aceite de oliva virgen",
+        price: 16.0,
+        category: "cocina",
+        image: dishPaellaMariscos,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Tortilla Española Jugosa con Patatas y Cebolla Pochada",
+        description: "Clásica tortilla de patatas con centro tierno y jugoso, preparada al momento con huevos camperos frescos",
+        price: 7.5,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Champiñones Salteados al Ajillo con Jamón y Jerez",
+        description: "Hongos frescos salteados en cazuela de barro caliente con láminas de ajo dorado, trocitos de jamón y vino blanco",
+        price: 8.0,
+        category: "cocina",
+        image: dishRisottoPorcini,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Churros Artesanales con Chocolate Especiado Caliente",
+        description: "Bastones de churros recién fritos crujientes con azúcar y canela, acompañados de taza de chocolate espeso",
+        price: 4.5,
+        category: "postres",
+        image: dishCannoliSiciliani,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Jarra de Sangría Tinta Española de la Casa",
+        description: "Vino tinto joven, frutas cítricas en dados, canela en rama y toque de coñac con abundante hielo",
+        price: 10.0,
+        category: "bebidas",
+        image: cervezaSoleraImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("arabe") || catLower.includes("arabito") || catLower.includes("libanes") || catLower.includes("vagon") || catLower.includes("shanklish")) {
+    heroHeadline = `Auténtica Gastronomía Libanesa & Especialidades Árabes en ${name}`;
+    heroSubtitle = `Shawarmas al spiedo vertical sazonados con especias de oriente, kibbeh crocante relleno de piñones, hummus sedoso y pan pita al horno.`;
+    features = ["Spiedo Vertical Tradicional", "Recetas Familiares de Medio Oriente", "Tahini Puro de Sésamo", "Pan Pita Inflado al Momento"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Gran Plato Mixto Árabe (Hummus, Kibbeh, Tabbouleh & Tabaquitos)",
+        description: "Hummus cremoso con garbanzos y tahini, Baba Ganoush ahumado, dos kibbehs dorados, cuatro tabaquitos de parra y pan árabe recién salido del horno",
+        price: 14.0,
+        category: "cocina",
+        image: dishShawarmaPlatter,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Shawarma Especial de Lomito con Crema de Ajo Toum",
+        description: "Láminas finas de carne marinada al spiedo, enrolladas en pan pita suave con crema de ajo libanesa, tomate fresco y pepinillos encurtidos",
+        price: 8.0,
+        category: "cocina",
+        image: dishShanklishMezze,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Kibbeh Frito Relleno de Carne Molida y Piñones Tostados",
+        description: "Costra crocante de trigo bulgur y carne de res sazonada, rellena de picadillo de carne con cebolla pochada y piñones crujientes",
+        price: 7.0,
+        category: "cocina",
+        image: dishKibbehFrito,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Baklava Hojaldrado con Miel de Azahar y Pistacho",
+        description: "Finas capas de masa filo crujiente rellenas de nueces y pistachos picados, bañadas en almíbar perfumado de flor de azahar",
+        price: 4.0,
+        category: "postres",
+        image: baklavaImg,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Limonada Libanesa con Menta Fresca y Hielo Frappé",
+        description: "Limonada natural batida con hojas frescas de hierbabuena y toque de agua de azahar",
+        price: 2.5,
+        category: "bebidas",
+        image: cervezaPolarImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("grill") || catLower.includes("parrilla") || catLower.includes("carbon") || catLower.includes("bunker") || catLower.includes("fogon") || catLower.includes("churrasc")) {
+    heroHeadline = `Cortes Prime Madurados & Asados a las Brasas en ${name}`;
+    heroSubtitle = `Punta trasera tierna sellada al carbón con sal marina gruesa, solomo de cuerito, chorizos ahumados artesanalmente y yuca suave con guasacaca.`;
+    features = ["Cortes Prime Madurados", "Leña de Quebracho y Carbón Noble", "Guasacaca Casera con Aguacate", "Parrillas para Compartir"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Punta Trasera Prime al Carbón (500g) con Yuca y Queso Frito",
+        description: "Corte premium madurado a la parrilla con sal gruesa marina, servido en tabla caliente con yuca tierna al vapor, queso a la plancha y guasacaca",
+        price: 18.5,
+        category: "cocina",
+        image: dishPuntaTrasera,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Parrillada Mixta Familiar (Punta, Pollo, Chorizo & Morcilla)",
+        description: "Selección para 2-3 comensales con cortes tiernos de res, pechuga marinada, chorizo criollo ahumado, morcilla campesina, arepitas y nata",
+        price: 26.0,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Costillas de Cerdo Ahumadas al Quebracho con Glaseado BBQ",
+        description: "Costillar suave y jugoso cocido a fuego lento durante 4 horas, barnizado con salsa BBQ criolla casera ligeramente dulce",
+        price: 14.5,
+        category: "cocina",
+        image: dishPicanhaChurrasco,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Quesillo Criollo con Caramelo y Toque de Ron Añejo",
+        description: "Textura cremosa tradicional con caramelo dorado oscuro perfumado con ron venezolano",
+        price: 4.5,
+        category: "postres",
+        image: dishQuesilloVenezolano,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Cerveza Polar Pilsen / Solera Reserva Bien Fría",
+        description: "Cerveza venezolana helada servida en jarra congelada",
+        price: 2.5,
+        category: "bebidas",
+        image: cervezaPolarImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("arepa") || catLower.includes("tito") || catLower.includes("empanada") || catLower.includes("san blas") || catLower.includes("criollos")) {
+    heroHeadline = `Arepas al Budare, Empanadas Crujientes & Desayunos Criollos en ${name}`;
+    heroSubtitle = `Arepas calientes resueltas con masa fresca, reina pepiada con aguacate cremoso, carne mechada jugosa, queso amarillo y empanadas doradas al momento.`;
+    features = ["Masa 100% Maíz al Momento", "Rellenos Resueltos de Primera", "Salsas de Ajo y Guasacaca", "Desayunos y Cenas Criollas"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Arepa Reina Pepiada Suprema con Aguacate",
+        description: "Arepa asada al budare rellena con pechuga de pollo desmechada, mayonesa casera, abundante aguacate fresco y queso blanco rallado",
+        price: 4.5,
+        category: "cocina",
+        image: dishPuntaTrasera,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Arepa Pelúa con Carne Mechada y Queso Amarillo",
+        description: "Carne de res guisada lentamente con sofrito criollo criollo, bañada con queso amarillo gouda madurado rallado",
+        price: 5.0,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Empanada Operada de Cazón Oriental con Queso",
+        description: "Empanada de maíz frita crocante con guiso tradicional de cazón margariteño y queso blanco fundido",
+        price: 2.5,
+        category: "cocina",
+        image: dishPaellaMariscos,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Ración de Tequeños Artesanales con Salsa Tártara",
+        description: "Cinco tequeños dorados rellenos de queso llanero suave con salsa tártara de la casa",
+        price: 5.0,
+        category: "postres",
+        image: dishCannoliSiciliani,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Jugo Natural de Papelón con Limón Frío / Malta",
+        description: "Bebida tradicional bien helada con panela pura y limón criollo recién exprimido",
+        price: 2.0,
+        category: "bebidas",
+        image: cervezaPolarImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("smoke") || catLower.includes("gabo") || catLower.includes("brisket")) {
+    heroHeadline = `Auténtico Smokehouse & Carnes Ahumadas al Quebracho en ${name}`;
+    heroSubtitle = `Brisket de res ahumado por 12 horas a baja temperatura, costillas de cerdo tiernas bañadas en salsa BBQ artesanal y pulled pork en pan brioche suave.`;
+    features = ["Ahumado Lento con Leña de Quebracho", "Cortes Prime Seleccionados", "Salsas BBQ de la Casa", "Cervezas Frías y Artesanales"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Brisket Texas Style Ahumado 12 Horas (350g)",
+        description: "Pecho de res premium con anillo de humo perfecto, sal marina y pimienta negra quebrada, servido con papas fritas rústicas",
+        price: 16.0,
+        category: "cocina",
+        image: dishPuntaTrasera,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Costillar St. Louis Ahumado con BBQ Criolla",
+        description: "Costillas de cerdo caramelizadas a fuego indirecto con madera noble y glaseado agridulce especial",
+        price: 14.0,
+        category: "cocina",
+        image: dishPicanhaChurrasco,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Sandwich Pulled Pork en Pan Brioche con Coleslaw",
+        description: "Cerdo desmechado bañado en salsa BBQ ahumada, pepinillos dulces y ensalada de repollo fresca",
+        price: 8.5,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Mac & Cheese Cremoso Gratinado con Bacon Bits",
+        description: "Coditos tiernos en salsa cuatro quesos con tocineta ahumada crujiente",
+        price: 6.0,
+        category: "postres",
+        image: tuttoPasticho,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Cerveza Polar Pilsen / Solera Reserva Helada",
+        description: "Servida a temperatura bajo cero",
+        price: 2.5,
+        category: "bebidas",
+        image: cervezaPolarImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("churro") || catLower.includes("sweet") || catLower.includes("cake") || catLower.includes("delike") || catLower.includes("antojo")) {
+    heroHeadline = `Churros Crujientes, Tortas de Diseño & Antojos Dulces en ${name}`;
+    heroSubtitle = `Churros dorados al momento espolvoreados con azúcar y canela, rellenos de Nutella y arequipe, marquesas húmedas y repostería artesanal.`;
+    features = ["Churros Fritos al Momento", "Nutella Original & Arequipe", "Tortas Húmedas Artesanales", "Café & Malteadas Espesas"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Ración de Churros Españoles con Nutella y Arequipe",
+        description: "Seis bastones de churros recién fritos crujientes por fuera y suaves por dentro, bañados con abundante Nutella y dulce de leche",
+        price: 4.5,
+        category: "cocina",
+        image: dishCannoliSiciliani,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Torta Marquesa Húmeda de Chocolate Belga",
+        description: "Capas de galleta María embebidas en licor suave con pudding denso de cacao 70% y lluvia de chispas",
+        price: 5.0,
+        category: "cocina",
+        image: tuttoTiramisu,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Waffle Belga Dorado con Fresas Frescas y Helado",
+        description: "Masa belga aireada con bola de helado de mantecado, rodajas de fresa fresca y sirope de chocolate",
+        price: 6.0,
+        category: "cocina",
+        image: dishQuesilloVenezolano,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Porción de Tres Leches Tradicional con Canela",
+        description: "Bizcochuelo esponjoso empapado en crema de leche condensada, evaporada y nata con merengue flameado",
+        price: 4.0,
+        category: "postres",
+        image: dishQuesilloVenezolano,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Malteada Espesa de Galleta Oreo y Vainilla",
+        description: "Batido denso con helado artesanal, trozos de galleta Oreo y montaña de crema chantilly",
+        price: 4.5,
+        category: "bebidas",
+        image: cervezaSoleraImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("perro")) {
+    heroHeadline = `Perros Calientes Tradicionales, Pepitos & Sabor Callejero en ${name}`;
+    heroSubtitle = `El auténtico perro caliente venezolano con salchicha jugosa, papitas crujientes, cebolla, repollo y montaña de queso blanco rallado.`;
+    features = ["Pan Extra Suave al Vapor", "Salsas Especiales de la Casa", "Queso Blanco Rallado Abundante", "Servicio Rápido por WhatsApp"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Perro Caliente Especial con Todo y Queso Rallado",
+        description: "Pan suave al vapor, salchicha jumbo, cebolla picadita, repollo fresco, papas rayadas crujientes, salsas de la casa y montaña de queso blanco llanero",
+        price: 3.0,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Perro Caliente Doble Salchicha Gratinado con Bacon",
+        description: "Doble salchicha a la plancha, cebolla caramelizada, tocineta crocante y gratinado fundido de queso mozzarella",
+        price: 4.5,
+        category: "cocina",
+        image: dishPuntaTrasera,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Pepito Especial de Lomito con Salsa Tártara",
+        description: "Pan campesino relleno de tiras tiernas de lomito a la plancha, maíz dulce, papitas y queso derretido",
+        price: 8.5,
+        category: "cocina",
+        image: dishParrilladaMixta,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Salchipapas Glotonas con Queso Cheddar Fundido",
+        description: "Papas fritas doradas con rodajas de salchicha especial bañadas en queso cheddar caliente",
+        price: 5.0,
+        category: "postres",
+        image: dishParrilladaMixta,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Refresco Familiar / Malta Polar Bien Fría",
+        description: "Bebida fría servida con vaso congelado",
+        price: 2.0,
+        category: "bebidas",
+        image: cervezaPolarImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else if (catLower.includes("chino") || catLower.includes("lila su") || catLower.includes("canton")) {
+    heroHeadline = `Gastronomía China Cantonesa Tradicional & Especialidades Wok en ${name}`;
+    heroSubtitle = `Arroz frito especial al fuego vivo del wok, costillitas sal y pimienta crocantes, lumpias doradas y pollo agridulce con piña.`;
+    features = ["Fuego Vivo de Wok Tradicional", "Ingredientes y Especias de Cantón", "Porciones Familiares Abundantes", "Delivery Rápido por WhatsApp"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: "Arroz Frito Especial Cantonés con Camarones y Lechón",
+        description: "Arroz al wok salteado a fuego alto con camarones frescos, tiras de lechón asado, pollo tierno, cebollín y brotes de soja",
+        price: 8.5,
+        category: "cocina",
+        image: dishRisottoPorcini,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Costillitas Sal y Pimienta Crujientes con Ajo",
+        description: "Costillas de cerdo marinadas en cinco especias chinas, fritas crujientes con láminas de ajo dorado y cebollín",
+        price: 11.0,
+        category: "cocina",
+        image: dishPicanhaChurrasco,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Ración de Lumpias Tradicionales con Salsa Agridulce",
+        description: "Dos lumpias grandes doradas rellenas de repollo, zanahoria y carne sazonada con dip agridulce rojo",
+        price: 4.0,
+        category: "cocina",
+        image: dishCannoliSiciliani,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Pollo Agridulce con Piña Fresca y Pimentón",
+        description: "Trozos de pechuga crujiente bañados en salsa agridulce brillante de la casa con trocitos de piña y vegetales",
+        price: 9.5,
+        category: "postres",
+        image: dishPaellaMariscos,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Té Verde Chino Jazmín Caliente o Jarra Fría",
+        description: "Infusión aromática tradicional de hojas de jazmín",
+        price: 2.5,
+        category: "bebidas",
+        image: cervezaSoleraImg,
+        isChefRecommendation: false,
+      },
+    ];
+  } else {
+    // Default High-End Culinary Offering
+    heroHeadline = `Alta Gastronomía & Servicio de Primera en ${name}`;
+    heroSubtitle = `Propuesta culinaria selecta elaborada con ingredientes frescos de la más alta calidad, atención cálida personalizada y ambiente refinado.`;
+    features = ["Ingredientes Frescos Seleccionados", "Recetas Exclusivas de la Casa", "Atención Personalizada", "Delivery Rápido por WhatsApp"];
+    offeringsList = [
+      {
+        id: `off-${slug}-1`,
+        name: `Plato Insignia de la Casa - ${name}`,
+        description: "Nuestra preparación más celebrada por los comensales, elaborada con técnicas de vanguardia y productos frescos seleccionados de temporada",
+        price: 16.0,
+        category: "cocina",
+        image: dishRisottoPorcini,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-4`, `off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-2`,
+        name: "Especialidad del Chef - Selección del Día",
+        description: "Receta tradicional perfeccionada con guarnición especial de la casa y salsa reducción de autor",
+        price: 13.5,
+        category: "cocina",
+        image: dishPaellaMariscos,
+        isChefRecommendation: true,
+        pairsWellWith: [`off-${slug}-5`],
+      },
+      {
+        id: `off-${slug}-3`,
+        name: "Entrada Gourmet para Compartir",
+        description: "Bocados crujientes con contrastes de sabores y aderezo especial para iniciar la experiencia gastronómica",
+        price: 8.5,
+        category: "cocina",
+        image: dishPuntaTrasera,
+        isChefRecommendation: false,
+      },
+      {
+        id: `off-${slug}-4`,
+        name: "Postre Artesanal de la Pastelería de la Casa",
+        description: "Elaborado diariamente con frutas frescas, chocolate fino y crema suave",
+        price: 5.5,
+        category: "postres",
+        image: dishQuesilloVenezolano,
+        isChefRecommendation: true,
+      },
+      {
+        id: `off-${slug}-5`,
+        name: "Bebida Especial de la Casa Servida Fría",
+        description: "Refrescante, preparada al momento con ingredientes naturales y hielo frappé",
+        price: 3.0,
+        category: "bebidas",
+        image: cervezaSoleraImg,
+        isChefRecommendation: false,
+      },
+    ];
+  }
+
+  // Smart phone assigner based on city if not given
+  let defaultPhone = "584144002860";
+  let defaultDisplay = "+58 414 400 2860";
+  if (detectedCity.includes("Carabobo") || detectedCity.includes("Valencia")) {
+    defaultPhone = "584144123456";
+    defaultDisplay = "+58 414 412 3456";
+  } else if (detectedCity.includes("Bolívar") || detectedCity.includes("Puerto Ordaz")) {
+    defaultPhone = "584249147877";
+    defaultDisplay = "+58 424 914 7877";
+  }
+  const cleanPhone = (data.phone || defaultPhone).replace(/[^\d]/g, "");
+
+  // Generate authentic GMB reviews tailored to cuisine
+  let generatedReviews: BusinessProfile["reviews"] = [];
+  if (catLower.includes("pizza") || catLower.includes("ital") || catLower.includes("pasta") || catLower.includes("nonna") || catLower.includes("mozzarella") || catLower.includes("mario") || catLower.includes("prebo")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Valentina Giannini",
+        rating: 5,
+        isLocalGuide: true,
+        text: "La masa de la pizza a la leña tiene ese toque crocante perfecto de masa madre y el pasticho boloñesa es idéntico al de mi nonna. El delivery por WhatsApp fue súper rápido y llegó caliente.",
+        relativeTime: "Hace 4 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Carlos Eduardo Mendoza",
+        rating: 5,
+        isLocalGuide: false,
+        text: "Excelente ambiente y sabor. Los fettuccines con crema de trufa y el tiramisú al mascarpone son de nivel internacional. Sin duda de los mejores de la zona.",
+        relativeTime: "Hace 2 semanas",
+      },
+    ];
+  } else if (catLower.includes("sushi") || catLower.includes("poke") || catLower.includes("tokio") || catLower.includes("bonsai") || catLower.includes("nikkei") || catLower.includes("ramen") || catLower.includes("cebich")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Mariana De Freitas",
+        rating: 5,
+        isLocalGuide: true,
+        text: "El poke bowl de salmón viene súper fresco, generoso en aguacate y con el aderezo ponzu en su punto. Los rolls flameados tienen un toque ahumado delicioso.",
+        relativeTime: "Hace 3 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Alejandro Silva",
+        rating: 5,
+        isLocalGuide: false,
+        text: "La atención por WhatsApp es súper rápida y el ramen tonkotsu tiene un caldo espeso increíble. El empaque térmico mantiene los rolls impecables.",
+        relativeTime: "Hace 1 semana",
+      },
+    ];
+  } else if (catLower.includes("paella") || catLower.includes("galicia") || catLower.includes("rias") || catLower.includes("galeon") || catLower.includes("marisco") || catLower.includes("pescad")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Dr. Fernando Rivas",
+        rating: 5,
+        isLocalGuide: true,
+        text: "La paella marinera a la leña con frutos del mar para compartir en familia es insuperable. Camarones grandes, calamares tiernos y el arroz con socarrat perfecto.",
+        relativeTime: "Hace 5 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Isabel Cristina Ochoa",
+        rating: 5,
+        isLocalGuide: false,
+        text: "El pulpo a la gallega y la cazuela gratinada son una exquisitez. La jarra de sangría española bien fría cierra con broche de oro.",
+        relativeTime: "Hace 3 semanas",
+      },
+    ];
+  } else if (catLower.includes("pollo")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Ing. Héctor Rodríguez",
+        rating: 5,
+        isLocalGuide: true,
+        text: "El pollo en brasas tiene la piel bien doradita y la carne jugosa con leña de verdad. La guasacaca y las hallaquitas recién hechas son un diez de diez.",
+        relativeTime: "Hace 4 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Daniela Sifontes",
+        rating: 5,
+        isLocalGuide: false,
+        text: "El combo familiar rinde muchísimo para todos en casa. Muy amables en la atención y el pedido llegó en tiempo récord por WhatsApp.",
+        relativeTime: "Hace 2 semanas",
+      },
+    ];
+  } else if (catLower.includes("cachap") || catLower.includes("shaday") || catLower.includes("maiz") || catLower.includes("chicharron")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "José Gregorio Parra",
+        rating: 5,
+        isLocalGuide: true,
+        text: "La cachapa con doble queso de mano y pernil horneado es gigante y el maíz dulce se nota que lo muelen en el día. El cochino frito crujiente no tiene comparación.",
+        relativeTime: "Hace 2 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Carmen Elena Morales",
+        rating: 5,
+        isLocalGuide: false,
+        text: "Sabor a tradición pura. El queso fresco chorreando sobre la cachapa caliente es una delicia y la chicha criolla con canela está bien espesa y fría.",
+        relativeTime: "Hace 1 semana",
+      },
+    ];
+  } else if (catLower.includes("sopa") || catLower.includes("hervido") || catLower.includes("angelica") || catLower.includes("pola") || catLower.includes("don rafa") || catLower.includes("sandra")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Eduardo Castillo",
+        rating: 5,
+        isLocalGuide: true,
+        text: "El hervido de res cruzado en caldero te revive de inmediato. Verduras frescas campesinas y carne tan suave que se desprende sola. Arepitas calientes al punto.",
+        relativeTime: "Hace 3 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "María Auxiliadora Rivas",
+        rating: 5,
+        isLocalGuide: false,
+        text: "Sazón de hogar inconfundible. El seco criollo con carne mechada y tajadas doradas tiene ese toque tradicional que cuesta encontrar hoy en día.",
+        relativeTime: "Hace 2 semanas",
+      },
+    ];
+  } else if (catLower.includes("paisa") || catLower.includes("portoncito")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Andrés Felipe Gómez",
+        rating: 5,
+        isLocalGuide: true,
+        text: "La bandeja paisa es monumental, con el chicharrón súper carnudo y tostado sin estar grasoso. El sancocho sabe a hogar y el jugo de lulo natural es una maravilla.",
+        relativeTime: "Hace 6 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Lucía Ramírez",
+        rating: 5,
+        isLocalGuide: false,
+        text: "La mejor comida colombiana de la ciudad. Arepas con hogao casero y porciones súper generosas que valen totalmente la pena.",
+        relativeTime: "Hace 2 semanas",
+      },
+    ];
+  } else if (catLower.includes("ble") || catLower.includes("blé") || catLower.includes("croissant") || catLower.includes("boulangerie") || catLower.includes("anella") || catLower.includes("dolcezza")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Camila De Sola",
+        rating: 5,
+        isLocalGuide: true,
+        text: "Los croissants de almendras con mantequilla pura son una joya y el baguette crujiente con serrano y brie es perfecto. El café latte art tiene gran cuerpo.",
+        relativeTime: "Hace 3 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Gabriel Henríquez",
+        rating: 5,
+        isLocalGuide: false,
+        text: "Ambiente encantador para desayunar o merendar. El éclair de chocolate belga y la quiche lorraine son obligatorios cada vez que venimos.",
+        relativeTime: "Hace 1 semana",
+      },
+    ];
+  } else if (catLower.includes("grill") || catLower.includes("parrilla") || catLower.includes("carbon") || catLower.includes("bunker") || catLower.includes("fogon") || catLower.includes("churrasc") || catLower.includes("meson") || catLower.includes("rodeo")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Gustavo Morales",
+        rating: 5,
+        isLocalGuide: true,
+        text: "La punta trasera servida en tabla caliente con yuca suavecita y queso frito es una locura. Carne madurada en leña suave que se corta sola.",
+        relativeTime: "Hace 5 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Mauricio Benítez",
+        rating: 5,
+        isLocalGuide: false,
+        text: "Las parrilladas mixtas y las costillas ahumadas en BBQ criolla son de primer nivel. Excelente atención y las cervezas a punto de nieve.",
+        relativeTime: "Hace 2 semanas",
+      },
+    ];
+  } else if (catLower.includes("mostritos") || catLower.includes("aquefrank") || catLower.includes("popochorronitas") || catLower.includes("hangar") || catLower.includes("garage") || catLower.includes("buguer")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Kevin A. Rangel",
+        rating: 5,
+        isLocalGuide: true,
+        text: "La hamburguesa smash doble con tocineta tiene el queso fundido perfecto y el pan brioche es una nube. El pepito mixto de 40cm gratinado es una delicia total.",
+        relativeTime: "Hace 2 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Stephanie Colina",
+        rating: 5,
+        isLocalGuide: false,
+        text: "Papas rústicas cargadas de cheddar caliente y tocineta crujiente. Pedir por WhatsApp fue súper sencillo y el empaque llegó impecable.",
+        relativeTime: "Hace 1 semana",
+      },
+    ];
+  } else if (catLower.includes("arabe") || catLower.includes("libanes") || catLower.includes("shawarma") || catLower.includes("beirut")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Karim Al-Haddad",
+        rating: 5,
+        isLocalGuide: true,
+        text: "El plato mixto árabe trae de todo: hummus cremoso, tabaquitos y kibbeh crocante con piñones. El shawarma de lomito con crema toum de ajo es insuperable.",
+        relativeTime: "Hace 3 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Nathalie Saab",
+        rating: 5,
+        isLocalGuide: false,
+        text: "Auténtico sabor de Medio Oriente. Los dulces de baklava hojaldrados con pistacho y la limonada con menta fresca cierran la comida de manera perfecta.",
+        relativeTime: "Hace 1 semana",
+      },
+    ];
+  } else if (catLower.includes("arepa") || catLower.includes("tito") || catLower.includes("empanada") || catLower.includes("san blas") || catLower.includes("criollos")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Marcos Aurelio Mendoza",
+        rating: 5,
+        isLocalGuide: true,
+        text: "Las arepas salen tostaditas del budare y van cargadas hasta arriba sin mezquindad. La reina pepiada con aguacate en crema y la pelúa con queso amarillo son insuperables. La salsa tártara de ajo le da el toque maestro.",
+        relativeTime: "Hace 2 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Yulimar Blanco",
+        rating: 5,
+        isLocalGuide: false,
+        text: "Las empanadas de cazón y queso fundido tienen masa crujiente y cero exceso de grasa. Pedir por WhatsApp fue súper rápido y llegaron calienticas a casa.",
+        relativeTime: "Hace 1 semana",
+      },
+    ];
+  } else if (catLower.includes("smoke") || catLower.includes("gabo") || catLower.includes("brisket")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Ing. Reinaldo Pacheco",
+        rating: 5,
+        isLocalGuide: true,
+        text: "El brisket es una verdadera obra de arte: 12 horas en el ahumador de quebracho se notan en cada bocado, la corteza de pimienta y el jugo de la carne son sublimes.",
+        relativeTime: "Hace 4 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Valeria Castellanos",
+        rating: 5,
+        isLocalGuide: false,
+        text: "Las costillas BBQ St. Louis se desprenden solas del hueso y los macarrones con queso ahumado son adictivos. Cerveza bien fría y tremenda vibra.",
+        relativeTime: "Hace 2 semanas",
+      },
+    ];
+  } else if (catLower.includes("churro") || catLower.includes("sweet") || catLower.includes("cake") || catLower.includes("delike") || catLower.includes("antojo")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Mariángel Rondón",
+        rating: 5,
+        isLocalGuide: true,
+        text: "Los churros recién hechos salen dorados y crujientes, rebosantes de Nutella y arequipe. La torta húmeda de chocolate belga es una delicia de otro nivel.",
+        relativeTime: "Hace 3 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Diego Alejandro Castillo",
+        rating: 5,
+        isLocalGuide: false,
+        text: "Excelente pastelería y repostería artesanal. El postre de tres leches y la malteada espesa de Oreo son perfectos para consentirse el fin de semana.",
+        relativeTime: "Hace 1 semana",
+      },
+    ];
+  } else if (catLower.includes("perro")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Gustavo Adolfo Pérez",
+        rating: 5,
+        isLocalGuide: true,
+        text: "El perro caliente clásico valenciano con montaña de queso blanco rallado, papitas crujientes y todas las salsas de la casa. El pan al vapor es suavísimo.",
+        relativeTime: "Hace 1 día",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Adriana Lucena",
+        rating: 5,
+        isLocalGuide: false,
+        text: "Los mejores perros calientes y pepitos de la zona. Las salchipapas con cheddar derretido son una bomba de sabor y la atención por WhatsApp es inmediata.",
+        relativeTime: "Hace 5 días",
+      },
+    ];
+  } else if (catLower.includes("chino") || catLower.includes("lila su") || catLower.includes("canton")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Dr. Víctor Chen",
+        rating: 5,
+        isLocalGuide: true,
+        text: "El arroz cantonés especial tiene ese auténtico sabor ahumado a wok de alta temperatura con camarones frescos y lechón jugoso. Las costillitas sal y pimienta son crujientes y aromáticas.",
+        relativeTime: "Hace 3 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Paola Guédez",
+        rating: 5,
+        isLocalGuide: false,
+        text: "Porciones súper generosas para toda la familia. Las lumpias doraditas con su salsa agridulce y el pollo con piña nunca fallan.",
+        relativeTime: "Hace 2 semanas",
+      },
+    ];
+  } else if (catLower.includes("toneles") || catLower.includes("chaguaramos") || catLower.includes("bella estrella") || catLower.includes("beverly") || catLower.includes("rancho nuevo") || catLower.includes("tasca")) {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Manuel Antonio Barreto",
+        rating: 5,
+        isLocalGuide: true,
+        text: "Excelente tasca con ambiente tradicional. La tortilla española en su punto de jugosidad, las tablas de picar bien resueltas y las cervezas a punto de hielo.",
+        relativeTime: "Hace 4 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Carolina Beltrán",
+        rating: 5,
+        isLocalGuide: false,
+        text: "Tradición y buena música. Las tapas ibéricas, los champiñones al ajillo y la atención cordial del personal hacen que siempre queramos regresar.",
+        relativeTime: "Hace 2 semanas",
+      },
+    ];
+  } else {
+    generatedReviews = [
+      {
+        id: `rev-${slug}-1`,
+        author: "Roberto Giannini",
+        rating: 5,
+        isLocalGuide: true,
+        text: `Excelente experiencia gastronómica en ${name}. Los platos llegaron en su punto exacto de cocción, con ingredientes frescos y presentación impecable.`,
+        relativeTime: "Hace 4 días",
+      },
+      {
+        id: `rev-${slug}-2`,
+        author: "Sofía Colmenares",
+        rating: 5,
+        isLocalGuide: false,
+        text: `La atención por WhatsApp es sumamente cordial y rápida. Los sabores están muy bien logrados y las porciones son generosas. Totalmente recomendado.`,
+        relativeTime: "Hace 2 semanas",
+      },
+    ];
+  }
 
   return {
     id: `biz-${Date.now()}-${slug}`,
     slug,
     name,
     shortName: name.split(" ")[0],
-    heroImage: mainDishImg,
+    heroImage: heroBannerImg,
     gmbUrl: data.url,
     category: cleanCategory,
     specialtyTagline: cleanSpecialty,
-    heroHeadline: `Experiencia Única en ${name}`,
-    heroSubtitle: `Disfruta de la mejor calidad y servicio especializado en ${name}. Revisa nuestras especialidades y haz tu pedido directamente por WhatsApp.`,
+    heroHeadline,
+    heroSubtitle,
     rating: data.rating || 4.9,
     reviewCount: data.reviewCount || 120,
     priceRange: "$$",
     phone: cleanPhone,
-    displayPhone: data.phone || `+${cleanPhone}`,
+    displayPhone: data.phone || defaultDisplay,
     email: cleanEmail,
-    address: data.address || "Sector Principal",
-    city: data.city || "Puerto Ordaz, Venezuela",
+    address: data.address || (detectedCity.includes("Valencia") ? "El Viñedo / San José de Tarbes" : "Sector Principal"),
+    city: detectedCity,
     hours: data.hours || "Lunes a Domingo: 11:30 AM - 10:00 PM",
     mapEmbedUrl,
     googleMapsDirectionsUrl,
@@ -3674,60 +5212,8 @@ export function createBusinessFromGmbData(data: {
       facebook: data.facebook || `https://www.facebook.com/${slug}/`,
       website: data.website || "",
     },
-    features: ["Atención Personalizada", "Calidad Garantizada", "Pedidos por WhatsApp", "Ubicación Céntrica"],
-    reviews: data.reviews && data.reviews.length > 0 ? data.reviews : [
-      {
-        id: `rev-gen-1`,
-        author: "Cliente Verificado",
-        rating: 5,
-        text: `Excelente servicio y calidad en ${name}. Superó nuestras expectativas por completo.`,
-        relativeTime: "Hace 1 semana",
-      },
-      {
-        id: `rev-gen-2`,
-        author: "Usuario Google Maps",
-        rating: 5,
-        text: "Puntualidad en los pedidos y sabores muy bien logrados. 100% recomendado.",
-        relativeTime: "Hace 3 semanas",
-      },
-    ],
-    offerings: [
-      {
-        id: `off-${slug}-1`,
-        name: `Especialidad de la Casa - ${name}`,
-        description: `Preparación exclusiva con los ingredientes más frescos seleccionados por nuestro equipo.`,
-        price: 14.99,
-        category: "cocina",
-        image: mainDishImg,
-        isChefRecommendation: true,
-      },
-      {
-        id: `off-${slug}-2`,
-        name: `Plato Destacado del Menú`,
-        description: `Receta tradicional alabada por nuestros clientes en reseñas de Google.`,
-        price: 11.5,
-        category: "cocina",
-        image: secondaryDishImg,
-        isChefRecommendation: true,
-      },
-      {
-        id: `off-${slug}-3`,
-        name: `Postre Artesanal Seleccionado`,
-        description: `El toque dulce perfecto para complementar tu experiencia.`,
-        price: 6.0,
-        category: "postres",
-        image: dessertImg,
-        isChefRecommendation: false,
-      },
-      {
-        id: `off-${slug}-4`,
-        name: `Bebida de la Casa`,
-        description: `Refrescante y servida bien fría para acompañar la ocasión.`,
-        price: 4.5,
-        category: "bebidas",
-        image: cervezaPolarImg,
-        isChefRecommendation: false,
-      },
-    ],
+    features,
+    reviews: data.reviews && data.reviews.length > 0 ? data.reviews : generatedReviews,
+    offerings: offeringsList,
   };
 }

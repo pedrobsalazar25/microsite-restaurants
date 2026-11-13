@@ -230,9 +230,12 @@ const HomePage = () => {
       <section className="px-4 mt-10">
         <div className="flex items-center justify-between mb-3">
           <div>
-            <div className="flex items-center gap-1.5 text-gold text-xs font-semibold">
+            <div className="flex items-center gap-2 text-gold text-xs font-semibold">
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
               <span>Reseñas de Google Maps</span>
+              <span className="text-[10px] font-normal text-muted-foreground bg-white/5 border border-white/10 px-1.5 py-0.5 rounded-full">
+                {activeBusiness.rating.toFixed(1)} ★ ({activeBusiness.reviewCount} opiniones)
+              </span>
             </div>
             <h2 className="font-heading text-xl font-bold text-foreground mt-0.5">
               Lo que opinan nuestros clientes
@@ -242,7 +245,7 @@ const HomePage = () => {
             href={activeBusiness.gmbUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gold hover:text-gold-light text-xs font-body flex items-center gap-1"
+            className="text-gold hover:text-gold-light text-xs font-body flex items-center gap-1 shrink-0"
           >
             <span>Ver perfil</span>
             <ExternalLink className="w-3 h-3" />
@@ -257,15 +260,22 @@ const HomePage = () => {
             >
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-2">
-                  <div className="w-7 h-7 rounded-full bg-gold/20 border border-gold/40 text-gold font-bold text-xs flex items-center justify-center font-heading">
+                  <div className="w-8 h-8 rounded-full bg-gold/20 border border-gold/40 text-gold font-bold text-xs flex items-center justify-center font-heading">
                     {rev.author.charAt(0)}
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-foreground font-body">{rev.author}</p>
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      <p className="text-xs font-bold text-foreground font-body">{rev.author}</p>
+                      {rev.isLocalGuide && (
+                        <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-amber-500/15 text-amber-400 font-semibold border border-amber-500/30 flex items-center gap-0.5">
+                          <span className="text-[9px]">★</span> Local Guide
+                        </span>
+                      )}
+                    </div>
                     <p className="text-[10px] text-foreground/50 font-body">{rev.relativeTime}</p>
                   </div>
                 </div>
-                <div className="flex text-amber-400">
+                <div className="flex text-amber-400 shrink-0">
                   {Array.from({ length: rev.rating }).map((_, i) => (
                     <Star key={i} className="w-3 h-3 fill-current" />
                   ))}

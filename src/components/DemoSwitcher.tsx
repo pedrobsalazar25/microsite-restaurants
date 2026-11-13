@@ -50,6 +50,26 @@ export const DemoSwitcher = () => {
     return localStorage.getItem("preferred_heading_font") || "montserrat-alternates";
   });
 
+  const [bizSearch, setBizSearch] = useState("");
+  const [cityFilter, setCityFilter] = useState<"all" | "valencia" | "pzo">("all");
+
+  const filteredBusinesses = useMemo(() => {
+    return businesses.filter((b) => {
+      const matchesSearch =
+        b.name.toLowerCase().includes(bizSearch.toLowerCase()) ||
+        b.category.toLowerCase().includes(bizSearch.toLowerCase()) ||
+        b.city.toLowerCase().includes(bizSearch.toLowerCase());
+      if (!matchesSearch) return false;
+      if (cityFilter === "valencia") {
+        return b.city.toLowerCase().includes("valencia") || b.city.toLowerCase().includes("carabobo");
+      }
+      if (cityFilter === "pzo") {
+        return b.city.toLowerCase().includes("bolívar") || b.city.toLowerCase().includes("puerto ordaz");
+      }
+      return true;
+    });
+  }, [businesses, bizSearch, cityFilter]);
+
   const applyHeadingFont = (fontId: string) => {
     const selected = HEADING_FONT_OPTIONS.find((f) => f.id === fontId) || HEADING_FONT_OPTIONS[0];
     document.documentElement.style.setProperty("--font-heading", selected.fontFamily);
@@ -174,34 +194,100 @@ export const DemoSwitcher = () => {
             {/* Dropdown Menu */}
             {dropdownOpen && (
               <div
-                className="absolute left-0 mt-1 w-64 bg-neutral-950 border border-gold/30 rounded-lg shadow-2xl p-1.5 z-50 space-y-1 animate-fade-up"
+                className="absolute left-0 mt-1 w-80 bg-neutral-950 border border-gold/40 rounded-xl shadow-2xl p-2.5 z-50 space-y-2 animate-fade-up max-h-[80vh] flex flex-col"
                 onMouseLeave={() => setDropdownOpen(false)}
               >
-                <div className="px-2 py-1 text-[10px] font-semibold text-neutral-400 uppercase tracking-wider">
-                  Seleccionar Microsite
+                <div className="flex items-center justify-between px-1">
+                  <div className="text-[11px] font-semibold text-gold uppercase tracking-wider flex items-center gap-1.5">
+                    <Store className="w-3.5 h-3.5" />
+                    <span>Microsites ({businesses.length})</span>
+                  </div>
+                  <span className="text-[10px] text-neutral-400 font-mono">
+                    {filteredBusinesses.length} visibles
+                  </span>
                 </div>
-                {businesses.map((biz) => (
+
+                {/* City Tabs */}
+                <div className="grid grid-cols-3 gap-1 p-0.5 bg-neutral-900 rounded-lg text-[10px] font-semibold">
                   <button
-                    key={biz.slug}
-                    onClick={() => {
-                      selectBusinessBySlug(biz.slug);
-                      setDropdownOpen(false);
-                    }}
-                    className={`w-full text-left px-2.5 py-1.5 rounded-md flex items-center justify-between transition-colors ${
-                      biz.slug === activeBusiness.slug
-                        ? "bg-gold/15 text-gold font-semibold"
-                        : "text-neutral-200 hover:bg-neutral-800"
+                    onClick={() => setCityFilter("all")}
+                    className={`py-1 rounded text-center transition-colors ${
+                      cityFilter === "all" ? "bg-gold text-black font-bold shadow" : "text-neutral-400 hover:text-white"
                     }`}
                   >
-                    <div className="truncate pr-2">
-                      <p className="text-xs truncate">{biz.name}</p>
-                      <p className="text-[10px] text-neutral-400 truncate">{biz.category}</p>
-                    </div>
-                    <span className="text-[10px] text-gold shrink-0">{biz.rating}★</span>
+                    Todos ({businesses.length})
                   </button>
-                ))}
+                  <button
+                    onClick={() => setCityFilter("valencia")}
+                    className={`py-1 rounded text-center transition-colors ${
+                      cityFilter === "valencia" ? "bg-gold text-black font-bold shadow" : "text-neutral-400 hover:text-white"
+                    }`}
+                  >
+                    Valencia ({businesses.filter((b) => b.city.toLowerCase().includes("valencia") || b.city.toLowerCase().includes("carabobo")).length})
+                  </button>
+                  <button
+                    onClick={() => setCityFilter("pzo")}
+                    className={`py-1 rounded text-center transition-colors ${
+                      cityFilter === "pzo" ? "bg-gold text-black font-bold shadow" : "text-neutral-400 hover:text-white"
+                    }`}
+                  >
+                    Pto Ordaz ({businesses.filter((b) => b.city.toLowerCase().includes("bolívar") || b.city.toLowerCase().includes("puerto ordaz")).length})
+                  </button>
+                </div>
 
-                <div className="border-t border-neutral-800 pt-1 mt-1">
+                {/* Search Input */}
+                <div>
+                  <input
+                    type="text"
+                    value={bizSearch}
+                    onChange={(e) => setBizSearch(e.target.value)}
+                    placeholder="Buscar por nombre, tipo..."
+                    className="w-full bg-neutral-900 border border-neutral-700 focus:border-gold rounded-md px-2.5 py-1 text-xs text-white placeholder-neutral-500 outline-none"
+                  />
+                </div>
+
+                {/* Scrollable list */}
+                <div className="overflow-y-auto max-h-64 space-y-1 pr-1 custom-scrollbar">
+                  {filteredBusinesses.map((biz) => {
+                    const isValencia = biz.city.toLowerCase().includes("valencia") || biz.city.toLowerCase().includes("carabobo");
+                    return (
+                      <button
+                        key={biz.slug}
+                        onClick={() => {
+                          selectBusinessBySlug(biz.slug);
+                          setDropdownOpen(false);
+                        }}
+                        className={`w-full text-left px-2 py-1.5 rounded-md flex items-center justify-between transition-colors ${
+                          biz.slug === activeBusiness.slug
+                            ? "bg-gold/20 text-gold border border-gold/40 font-semibold"
+                            : "text-neutral-200 hover:bg-neutral-800"
+                        }`}
+                      >
+                        <div className="truncate pr-2">
+                          <div className="flex items-center gap-1.5">
+                            <span className="text-xs truncate font-medium">{biz.name}</span>
+                            <span
+                              className={`text-[9px] px-1 py-0.2 rounded font-mono ${
+                                isValencia ? "bg-emerald-950 text-emerald-400 border border-emerald-800" : "bg-blue-950 text-blue-300 border border-blue-800"
+                              }`}
+                            >
+                              {isValencia ? "VLN" : "PZO"}
+                            </span>
+                          </div>
+                          <p className="text-[10px] text-neutral-400 truncate">{biz.category}</p>
+                        </div>
+                        <span className="text-[10px] text-gold shrink-0">{biz.rating}★</span>
+                      </button>
+                    );
+                  })}
+                  {filteredBusinesses.length === 0 && (
+                    <div className="py-4 text-center text-xs text-neutral-500">
+                      No se encontraron resultados para "{bizSearch}"
+                    </div>
+                  )}
+                </div>
+
+                <div className="border-t border-neutral-800 pt-1.5 mt-1">
                   <button
                     onClick={() => {
                       setDropdownOpen(false);

@@ -2,6 +2,19 @@ import { createContext, useContext, useState, useEffect, useCallback, type React
 import { useLocation, useNavigate } from "react-router-dom";
 import type { BusinessProfile } from "@/types/business";
 import { INITIAL_BUSINESSES, ALJ_ANNA_PROFILE, createBusinessFromGmbData } from "@/data/businesses";
+import { ALL_VALENCIA_BUSINESSES } from "@/data/allValenciaList";
+
+const COMBINED_INITIAL_BUSINESSES: BusinessProfile[] = (() => {
+  const seen = new Set<string>();
+  const list: BusinessProfile[] = [];
+  for (const b of [...INITIAL_BUSINESSES, ...ALL_VALENCIA_BUSINESSES]) {
+    if (!seen.has(b.slug)) {
+      seen.add(b.slug);
+      list.push(b);
+    }
+  }
+  return list;
+})();
 
 interface BusinessContextType {
   activeBusiness: BusinessProfile;
@@ -28,15 +41,15 @@ export const BusinessProvider = ({ children }: { children: ReactNode }) => {
         const parsed = JSON.parse(stored);
         if (Array.isArray(parsed) && parsed.length > 0) {
           // Merge with initial, avoiding duplicates by slug
-          const initialSlugs = new Set(INITIAL_BUSINESSES.map((b) => b.slug));
+          const initialSlugs = new Set(COMBINED_INITIAL_BUSINESSES.map((b) => b.slug));
           const filteredCustom = parsed.filter((b) => !initialSlugs.has(b.slug));
-          return [...INITIAL_BUSINESSES, ...filteredCustom];
+          return [...COMBINED_INITIAL_BUSINESSES, ...filteredCustom];
         }
       }
     } catch {
       // ignore
     }
-    return INITIAL_BUSINESSES;
+    return COMBINED_INITIAL_BUSINESSES;
   });
 
   // Track active slug
